@@ -1,0 +1,32 @@
+org: kauelima21
+service: lambda-example
+
+provider:
+  name: aws
+  runtime: nodejs20.x
+  region: us-east-1
+  memorySize: 128
+
+package:
+  individually: true
+  exclude:
+    - ./**
+
+plugins:
+  - serverless-logs-insights
+
+custom:
+  logsInsights:
+    queries:
+      errors: "fields @timestamp, @message | filter @message like /ERROR/ | sort @timestamp desc | limit 20"
+
+functions:
+  sample:
+    handler: sample.handler
+    package:
+      include:
+        - sample.js
+    events:
+      - httpApi:
+          path: /sample
+          method: GET

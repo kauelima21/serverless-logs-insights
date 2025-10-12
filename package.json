@@ -1,0 +1,40 @@
+{
+  "name": "serverless-logs-insights",
+  "version": "0.5.0",
+  "main": "dist/index.js",
+  "description": "Serverless Framework plugin to run AWS CloudWatch Logs Insights queries directly from the CLI.",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "serverless",
+    "aws",
+    "cloudwatch",
+    "logs",
+    "insights",
+    "plugin",
+    "monitoring",
+    "observability"
+  ],
+  "author": "Kauê Lima <kaueslim@outlook.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kauelima21/serverless-logs-insights"
+  },
+  "peerDependencies": {
+    "serverless": "^3.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.37.0",
+    "@types/node": "^24.7.2",
+    "eslint": "^9.37.0",
+    "globals": "^16.4.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.0"
+  },
+  "dependencies": {
+    "@aws-sdk/client-cloudwatch-logs": "^3.908.0",
+    "chalk": "^5.6.2"
+  }
+}
