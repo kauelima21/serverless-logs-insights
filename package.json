@@ -1,6 +1,6 @@
 {
   "name": "serverless-logs-insights",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "main": "dist/index.js",
   "description": "Serverless Framework plugin to run AWS CloudWatch Logs Insights queries directly from the CLI.",
   "scripts": {
