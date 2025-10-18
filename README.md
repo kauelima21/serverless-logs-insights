@@ -41,7 +41,7 @@ sls logs-insights -f <function> -q <query> [-i <interval>]
 | ------------------ | -------------------------------------------------------------------------- |
 | `-f`, `--function` | Name of the Lambda function (as defined in serverless.yml)                 |
 | `-q`, `--query`    | Name of the query defined in `custom.logsInsights.queries` or a free query |
-| `-i`, `--interval` | Number of recent executions to consider (default: 10)                      |
+| `-i`, `--interval` | Time interval (default: 1h)                      |
 
 ## Examples
 
