@@ -1,6 +1,6 @@
 {
   "name": "serverless-logs-insights",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "main": "dist/index.js",
   "description": "Serverless Framework plugin to run AWS CloudWatch Logs Insights queries directly from the CLI.",
   "scripts": {
@@ -17,7 +17,7 @@
     "observability"
   ],
   "author": "Kauê Lima <kaueslim@outlook.com>",
-  "license": "ISC",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/kauelima21/serverless-logs-insights"
